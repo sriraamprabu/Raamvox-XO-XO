@@ -29,21 +29,21 @@ function main() {
      function functieX() {
          winnendespeler = "PLAYER 1 ";
          stopSpel();
-         titel.style.color="whitesmoke"; 
+         titel.style.color="gray"; 
          uitslag.style.color="whitesmoke"; 
      };
     
      function functieO() {
          winnendespeler = "PLAYER 2 ";
          stopSpel();
-         titel.style.color="whitesmoke";
+         titel.style.color="gray";
          uitslag.style.color="whitesmoke";
      };
     
      function functieNiemand() {
          winnendespeler = "NOBODY ";
          stopSpel();
-         titel.style.color="whitesmoke";
+         titel.style.color="gray";
          uitslag.style.color="whitesmoke";
      };
               

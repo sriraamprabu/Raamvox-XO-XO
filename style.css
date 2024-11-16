@@ -24,7 +24,7 @@ body {
   
   section#frame {
     width: 100%;
-    margin: 30px auto 16px auto;
+    margin-top: 100px;
   }
   
   section#frame div {

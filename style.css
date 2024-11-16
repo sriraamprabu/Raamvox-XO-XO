@@ -36,8 +36,8 @@ body {
   }
   
   section#frame div {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin: 3px .5px;
     display: inline-block;
     vertical-align: top;
@@ -54,7 +54,7 @@ body {
   section#speler {
     color: white;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px;
   }
   
   section#speler p {

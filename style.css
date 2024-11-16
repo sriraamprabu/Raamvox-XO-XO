@@ -3,15 +3,17 @@
     font-family: "Josefin Sans", sans-serif;
 }
 body {
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-  }
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  background-color: #121212;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  flex-direction: column;
+  height: 100vh; /* Make the body fill the entire viewport */
+  margin: 0; /* Remove default margin */
+  overflow: hidden;
+}
   
   h1 {
     font-size: 30px;
@@ -23,16 +25,18 @@ body {
 
   
   section#frame {
-    width: 100%;
-    margin-top: 100px;
-  }
-  
-  section#frame div {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 90px); /* 3 columns of equal width */
+    grid-gap: 5px; /* Add spacing between the cells */
+}
+
+
+section#frame div {
     width: 90px;
     height: 90px;
-    margin: 3px .5px;
-    display: inline-block;
-    vertical-align: top;
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
     background-color: #252525;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
@@ -40,9 +44,8 @@ body {
     font-size: 50px;
     text-align: center;
     border: 1px solid #383838;
-    transition: background .5s;
-  }
-  
+    transition: background 0.5s;
+}
   section#speler {
     color: white;
     width: 100%;

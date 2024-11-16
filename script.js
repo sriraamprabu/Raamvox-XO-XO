@@ -43,6 +43,8 @@ function main() {
      function functieNiemand() {
          winnendespeler = "NOBODY ";
          stopSpel();
+         titel.style.color="whitesmoke";
+         uitslag.style.color="whitesmoke";
      };
               
      function winnaar() {

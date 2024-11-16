@@ -5,12 +5,13 @@
 body {
     font-family: 'Work Sans', sans-serif;
     text-align: center;
-    background-color: #FFC300;
+    background-color: #121212;
     margin-top: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
   }
   
   h1 {
@@ -36,12 +37,13 @@ body {
     margin: 3px .5px;
     display: inline-block;
     vertical-align: top;
-    background-color: white;
+    background-color: #252525;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     font-weight: 700;
     font-size: 50px;
     line-height: 120px;
+    border: 1px solid #383838;
     transition: background .5s;
   }
   
@@ -66,10 +68,26 @@ body {
   
   .active1 {
     font-weight:bolder;
-    color: #C70039;
+    color: #F2DF7B;
   }
-  
+
   .active2 {
     font-weight:bolder;
-    color: #FF5733;
+    color: #F3BB61;
+  }
+
+  .restart{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 60px;
+  }
+  a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    background-color: #252525;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
   }

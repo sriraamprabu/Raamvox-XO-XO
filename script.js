@@ -22,26 +22,26 @@ function main() {
                      e.preventDefault;
                };
          }
-         uitslag.innerHTML = winnendespeler + " won";
+         uitslag.innerHTML = winnendespeler + "WIN";
          spelers[0,1].className = "";
      };
     
      function functieX() {
-         winnendespeler = "player 1";
+         winnendespeler = "PLAYER 1 ";
          stopSpel();
-         titel.style.color="#C70039"; 
-         uitslag.style.color="#C70039"; 
+         titel.style.color="whitesmoke"; 
+         uitslag.style.color="whitesmoke"; 
      };
     
      function functieO() {
-         winnendespeler = "player 2";
+         winnendespeler = "PLAYER 2 ";
          stopSpel();
-         titel.style.color="#FF5733";
-         uitslag.style.color="#FF5733";
+         titel.style.color="whitesmoke";
+         uitslag.style.color="whitesmoke";
      };
     
      function functieNiemand() {
-         winnendespeler = "nobody";
+         winnendespeler = "NOBODY ";
          stopSpel();
      };
               
@@ -94,19 +94,19 @@ function main() {
                 if(this.getAttribute("data-id") === "false"){
                      if(tellerSpeler === 2){
                              this.innerHTML = "O";
-                             this.style.color = "#FF5733";
-                             this.style.backgroundColor = "#FECDC5";
+                             this.style.color = "#F3BB61";
+                             this.style.backgroundColor = "#252525;";
                       }else{
                              this.innerHTML = "X";
-                             this.style.color = "#C70039";
-                             this.style.backgroundColor = "#EEB6C5";
+                             this.style.color = "#F2DF7B";
+                             this.style.backgroundColor = "#252525;";
                       }
                 }
             };
   
             vakjes[i].onmouseout = function() {
                 if(this.getAttribute("data-id") === "false"){
-                     this.style.backgroundColor = "white";
+                     this.style.backgroundColor = "#252525;";
                      this.innerHTML = "";
                 }
             };
@@ -114,26 +114,25 @@ function main() {
             vakjes[i].onclick = function() { 
                 if(this.getAttribute("data-id") === "false"){
                      if(tellerSpeler === 2){
-                         this.style.color = "#FF5733"; 
+                         this.style.color = "#F3BB61"; 
                          this.innerHTML = "O";
                          tellerSpeler = 1;
                          spelers[0].className = "active1";
                          spelers[1].className = "";
                          this.setAttribute("data-id", "true");
                      }else{
-                         this.style.color = "#C70039";
+                         this.style.color = "#F2DF7B";
                          this.innerHTML = "X";
                          tellerSpeler = 2;
                          spelers[0].className = "";
                          spelers[1].className = "active2";
                          this.setAttribute("data-id", "true");
                       } 
-                      this.style.backgroundColor = "white";
+                      this.style.backgroundColor = "#252525;";
                       aantalTrue++;
                       winnaar();
                 }  
             };
-      
       };
   
     

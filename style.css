@@ -20,11 +20,7 @@ body {
     margin-top: 30px;
     color: white;
   }
-  
-  h2 {
-     margin-top: 20px;
-     color: white;
-  }
+
   
   section#frame {
     width: 380px;
@@ -42,7 +38,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     font-weight: 700;
     font-size: 50px;
-    line-height: 120px;
+    text-align: center;
     border: 1px solid #383838;
     transition: background .5s;
   }

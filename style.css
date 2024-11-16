@@ -27,8 +27,9 @@ body {
   section#frame {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(3, 90px); /* 3 columns of equal width */
-    grid-gap: 5px; /* Add spacing between the cells */
+    gap: 10px; /* Add a 10px gap between the boxes */
 }
+
 
 
 section#frame div {

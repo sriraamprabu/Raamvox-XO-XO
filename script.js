@@ -144,3 +144,7 @@ function main() {
   window.onload = function() {
          main();
   }
+
+  window.onload = function() {
+   document.body.style.opacity = '1';
+ };

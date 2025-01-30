@@ -3,37 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIC TAC TOE</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div style="position: fixed; top: 5%">
-        <h1>TIC TAC TOE</h1>
-        <br><br>
-        <h2></h2>
-    </div>
-  
-<div style="position: fixed; top: 30%;">
-    <section id="frame">
-        <div data-id="false"></div>
-        <div data-id="false"></div>
-        <div data-id="false"></div>
-        <div data-id="false"></div>
-        <div data-id="false"></div>
-        <div data-id="false"></div>
-        <div data-id="false"></div>
-        <div data-id="false"></div>
-        <div data-id="false"></div>
-    </section> 
-    <section id="speler">
-        <p class="active1">PLAYER 1</p>  <p>PLAYER 2</p>
-    </section>
-   
-</div>
+    <title>RAAMVOX</title>
+    <link rel="shortcut icon" href="assets/img/sneakers.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&display=swap');
 
-<div class="restart">
-    <a href="">RESTART</a>
-</div>
-<script src="script.js"></script>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  min-height: 100vh;
+  background: black;
+  margin: 0;
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0;
+  transition: opacity 1.5s ease-in; 
+  overflow: hidden; 
+
+}
+
+.title-text {
+  font-size: clamp(2rem, 8vw, 4rem);
+  --bg-size: 400%;
+  --color-one: rgb(255, 255, 255);
+  --color-two: rgb(67, 67, 67);
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  box-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .title-text {
+    animation: move-bg 8s linear infinite;
+  }
+
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+.sub-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: clamp(1rem, 1vw, 1rem);
+            font-weight: 300;
+            letter-spacing: clamp(0.15rem, 1vw, 0.25rem);
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 800px) {
+  .title-text {
+    font-size: 2rem;
+  }
+  .sub-title {
+    font-size: 0.5rem;
+  }
+}
+    </style>
+</head>
+<body oncontextmenu="return false;">
+  <div>
+    <h1 class="title-text">RAAMVOX</h1>
+  </div>
+  <div class="sub-title">CODE - CRAFT - CONQUER</div>
+
+    <script>
+        // Trigger the fade-in effect when the page loads
+        window.onload = function() {
+            document.body.style.opacity = '1';
+        };
+
+        // Fade out the page after 3 seconds
+        setTimeout(function() {
+            document.body.style.opacity = '0';
+        }, 7500);
+
+        // Redirect to another page after the fade-out
+        setTimeout(function() {
+            window.location.href = 'main.html';
+        }, 7500);
+    // </script>
 </body>
 </html>
